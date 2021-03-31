@@ -23,14 +23,14 @@ const middle = (array) => {
   let evenArray = [array[0] = array[Math.floor((array.length - 1) / 2)], array[1] = array[Math.floor((array.length) / 2)]];
   let oddArray = [array[Math.floor((array.length) / 2)]];
   let emptyArray = [];
-    if (array.length <= 2) {
-      return emptyArray;
-    } else if (array.length % 2 === 0) {
-      return evenArray;
-    } else if (array.length % 2 !== 0) {
-      return oddArray
+  if (array.length <= 2) {
+    return emptyArray;
+  } else if (array.length % 2 === 0) {
+    return evenArray;
+  } else if (array.length % 2 !== 0) {
+    return oddArray;
   }
-}
+};
 
 
 assertArraysEqual(middle([1]), []);
