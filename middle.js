@@ -20,8 +20,8 @@ const assertArraysEqual = (arrOne, arrTwo) => {
 };
 
 const middle = (array) => {
-  let oddArray = [array[Math.floor((array.length) / 2)]];
   let evenArray = [array[0] = array[Math.floor((array.length - 1) / 2)], array[1] = array[Math.floor((array.length) / 2)]];
+  let oddArray = [array[Math.floor((array.length) / 2)]];
   let emptyArray = [];
     if (array.length <= 2) {
       return emptyArray;
