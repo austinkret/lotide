@@ -40,6 +40,4 @@ const letterPositions = (sentence) => {
 
 
 
-assertArraysEqual(letterPositions('lighthouse in the house'), [1]);
-
-assertArraysEqual(letterPositions('hello'), [1]);
+assertArraysEqual(letterPositions('hello').l, [2, 3]);
