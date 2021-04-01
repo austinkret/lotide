@@ -25,16 +25,23 @@ const words = ["ground", "control", "to", "major", "tom"];
 
 const map = (array, callback) => {
   const results = [];
-  for(let item of array) {
+  for (let item of array) {
     results.push(callback(item));
   }
   return results;
 };
 
-const newArray = map(words, word => word[0])
+const newArray = map(words, word => word[0]);
 
 assertArraysEqual(newArray, [ 'g', 'c', 't', 'm', 't' ]);
 // Write test cases using at least three different ways of using map.
+
+
+
+
+
+
+
 
 const numbers = [1, 5, 10, 57, 49, 52, 82, 5];
 const resultsNumbers = map(numbers, number => number += 10);
