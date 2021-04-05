@@ -47,9 +47,9 @@ const numbers = [1, 5, 10, 57, 49, 52, 82, 5];
 const resultsNumbers = map(numbers, number => number += 10);
 assertArraysEqual(resultsNumbers, [11, 15, 20, 67, 59, 62, 92, 15]);
 
-const family = ['Austin', 'Kolina', 'Tyler', 'Tony'];
-const lastName = map(family, name => name + ' Kretzschmar');
-assertArraysEqual(lastName, ['Austin Kretzschmar', 'Kolina Kretzschmar', 'Tyler Kretzschmar', 'Tony Kretzschmar']);
+const family = ['Jeff', 'Mary', 'Frank', 'Jess'];
+const lastName = map(family, name => name + ' Adams');
+assertArraysEqual(lastName, ['Jeff Adams', 'Mary Adams', 'Frank Adams', 'Jess Adams']);
 
 const pets = ['Archie', 'Jeter', 'Lo', 'Pep', 'Oskar'];
 const petName = map(pets, name => name.length > 3);
