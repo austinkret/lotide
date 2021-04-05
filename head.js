@@ -1,4 +1,5 @@
-const assertEqual = require('./assertEqual')
+// eslint-disable-next-line no-unused-vars
+const assertEqual = require('./assertEqual');
 
 const head = (value) => {
   return value[0];
