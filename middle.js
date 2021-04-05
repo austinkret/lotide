@@ -1,24 +1,3 @@
-const eqArrays = (arrOne, arrTwo) => {
-  if (arrOne.length === arrTwo.length) {
-    for (let i = 0; i < arrOne.length; i++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-  } else {
-    return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = (arrOne, arrTwo) => {
-  if (eqArrays(arrOne, arrTwo)) {
-    console.log(`✅✅✅ Assertion Passed: ${arrOne} === ${arrTwo}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arrOne} !== ${arrTwo}`);
-  }
-};
-
 const middle = (array) => {
   let evenArray = [array[0] = array[Math.floor((array.length - 1) / 2)], array[1] = array[Math.floor((array.length) / 2)]];
   //if it's an even array, the first value should be middle -1, the second value should be middle +1, return two values
@@ -38,15 +17,7 @@ const middle = (array) => {
   }
 };
 
-
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
 
 //MY PSEUDOCODE :
 //for an even array - return two values either side of middle
