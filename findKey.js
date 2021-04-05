@@ -28,7 +28,9 @@ const data1 = {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 };
-const results1 = findKey(data1, x => x.stars === 2);
+
+let algor = x => x.stars === 2
+const results1 = findKey(data1, algor);
 
 assertEqual(results1, "noma");
 

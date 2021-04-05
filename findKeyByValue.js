@@ -25,3 +25,10 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+/*MY PSEUDOCODE TO WORK THROUGH THE PROBLEM:
+- Define the function findByKeyValue
+- Two parameters: object and value
+- Loop through the object
+- Return the first key which equals the value we are searching for
+*/
