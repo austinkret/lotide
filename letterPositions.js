@@ -1,5 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
 /*
 For each letter, instead of returning just one number to represent its number of occurrences,
 multiple numbers may be needed to represent all the places in the string that it shows up.
@@ -21,5 +19,3 @@ const letterPositions = (sentence) => {
 
 
 module.exports = letterPositions;
-
-assertArraysEqual(letterPositions('hello').l, [2, 3]);

@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const findKeyByValue = (object, value) => {
 //function findKeyByValue which takes in an object and a value.
   const keys = Object.keys(object);
@@ -11,17 +9,9 @@ const findKeyByValue = (object, value) => {
   }
 };
 
-const bestTVShowsByGenre = {
-  // eslint-disable-next-line camelcase
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
-
 module.exports = findKeyByValue;
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
 
 /*MY PSEUDOCODE TO WORK THROUGH THE PROBLEM:
 - Define the function findByKeyValue
