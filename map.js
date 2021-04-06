@@ -1,23 +1,4 @@
-const eqArrays = (arrOne, arrTwo) => {
-  if (arrOne.length === arrTwo.length) {
-    for (let i = 0; i < arrOne.length; i++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-  } else {
-    return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = (arrOne, arrTwo) => {
-  if (eqArrays(arrOne, arrTwo)) {
-    console.log(`✅✅✅ Assertion Passed: ${arrOne} === ${arrTwo}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arrOne} !== ${arrTwo}`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 //map will tkae in two arguments, array to map and a callback function
 //return a new array based on results of callback function
@@ -32,6 +13,8 @@ const map = (array, callback) => {
 };
 
 const newArray = map(words, word => word[0]);
+
+module.exports = map;
 
 assertArraysEqual(newArray, [ 'g', 'c', 't', 'm', 't' ]);
 // Write test cases using at least three different ways of using map.

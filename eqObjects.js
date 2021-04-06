@@ -1,11 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const eqArrays = (arrOne, arrTwo) => {
   if (arrOne.length === arrTwo.length) {
@@ -40,6 +34,9 @@ const eqObjects = (object1, object2) => {
   }
   return true;
 };
+
+
+module.exports = eqObjects;
 
 const ab = {a: "1", b: "2"};
 const ba = {b: "2", a: "1"};
