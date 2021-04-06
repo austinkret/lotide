@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@austinkret/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a mini clone of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/austinkret/lotide.git"
   },
-  "author": "",
+  "author": "Austin Kretzschmar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/austinkret/lotide/issues"
   },
-  "homepage": "https://github.com/austinkret/lotide#readme"
+  "homepage": "https://github.com/austinkret/lotide#readme",
+  "dependencies": {
+    "lotide": "^1.0.1",
+    "my-package": "*"
+  }
 }
